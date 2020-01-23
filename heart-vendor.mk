@@ -6,6 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lenovo/heart
 
 PRODUCT_COPY_FILES += \
+    vendor/lenovo/heart/proprietary/recovery/root/vendor/firmware/goodix_cfg_group.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/goodix_cfg_group.bin \
+    vendor/lenovo/heart/proprietary/recovery/root/vendor/firmware/goodix_firmware.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/goodix_firmware.bin \
     vendor/lenovo/heart/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.4-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.4-service_64 \
     vendor/lenovo/heart/proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.0-service \
     vendor/lenovo/heart/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service \
