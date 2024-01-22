@@ -136,7 +136,6 @@ PRODUCT_PACKAGES += \
     libhdmiedid \
     libhdmipassthru \
     libhfp \
-    libpn553_fw \
     libqtigef \
     libsndmonitor \
     libspkrprot \
@@ -216,6 +215,7 @@ PRODUCT_PACKAGES += \
     libmmcamera_faceproc \
     libmmcamera_faceproc2 \
     libmpbase \
+    libpn553_fw \
     libsensorcal \
     libsensorslog \
     libsns_device_mode_stub \
