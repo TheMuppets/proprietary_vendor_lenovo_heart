@@ -103,18 +103,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/heart/proprietary/vendor/firmware/cs47l35-dsp3-karaoke-vocals.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs47l35-dsp3-karaoke-vocals.wmfw \
     vendor/lenovo/heart/proprietary/vendor/firmware/goodix_cfg_group.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group.bin \
     vendor/lenovo/heart/proprietary/vendor/firmware/goodix_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware.bin \
-    vendor/lenovo/heart/proprietary/vendor/lib/camera/com.qti.sensormodule.ofilm_imx519.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ofilm_imx519.bin \
-    vendor/lenovo/heart/proprietary/vendor/lib/camera/com.qti.sensormodule.ofilm_imx576.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ofilm_imx576.bin \
-    vendor/lenovo/heart/proprietary/vendor/lib/camera/com.qti.sensormodule.ofilm_ov8356.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ofilm_ov8356.bin \
-    vendor/lenovo/heart/proprietary/vendor/lib/camera/com.qti.sensormodule.ofilm_s5k3p9sx.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ofilm_s5k3p9sx.bin \
-    vendor/lenovo/heart/proprietary/vendor/lib/camera/com.qti.tuned.ofilm_imx519.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ofilm_imx519.bin \
-    vendor/lenovo/heart/proprietary/vendor/lib/camera/com.qti.tuned.ofilm_imx576.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ofilm_imx576.bin \
-    vendor/lenovo/heart/proprietary/vendor/lib/camera/com.qti.tuned.ofilm_ov8356.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ofilm_ov8356.bin \
-    vendor/lenovo/heart/proprietary/vendor/lib/camera/com.qti.tuned.ofilm_s5k3p9sx.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ofilm_s5k3p9sx.bin \
-    vendor/lenovo/heart/proprietary/vendor/lib/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreview.bin \
-    vendor/lenovo/heart/proprietary/vendor/lib/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreviewlite.bin \
-    vendor/lenovo/heart/proprietary/vendor/lib/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideo.bin \
-    vendor/lenovo/heart/proprietary/vendor/lib/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideolite.bin \
     vendor/lenovo/heart/proprietary/vendor/lib64/camera/com.qti.sensormodule.ofilm_imx519.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.ofilm_imx519.bin \
     vendor/lenovo/heart/proprietary/vendor/lib64/camera/com.qti.sensormodule.ofilm_imx576.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.ofilm_imx576.bin \
     vendor/lenovo/heart/proprietary/vendor/lib64/camera/com.qti.sensormodule.ofilm_ov8356.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.ofilm_ov8356.bin \
@@ -129,8 +117,30 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/heart/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
+    audio.primary.msmnile \
+    vendor.qti.hardware.fingerprint@1.0 \
+    vendor.qti.hardware.audiohalext@1.0-impl \
+    liba2dpoffload \
+    libacdb-fts \
+    libacdbloader \
+    libacdbrtac \
+    libadiertac \
+    libadm \
+    libaudcal \
+    libaudio_log_utils \
+    libaudioconfigstore \
+    libpn553_fw \
+    libqtigef \
+    libssrec \
+    libasphere \
+    libqcbassboost \
+    libqcreverb \
+    libqcvirt \
+    libshoebox \
+    vendor.qti.hardware.audiohalext@1.0 \
     android.hardware.camera.provider@2.4-external \
     android.hardware.camera.provider@2.4-legacy \
+    android.hardware.sensors@2.0-impl \
     camera.device@1.0-impl \
     camera.device@3.2-impl \
     camera.device@3.3-impl \
@@ -178,9 +188,10 @@ PRODUCT_PACKAGES += \
     com.qtistatic.stats.pdlib \
     libdepthmapwrapper \
     android.hardware.camera.provider@2.4-impl \
-    audio.primary.msmnile \
     camera.qcom \
     com.qti.chi.override \
+    fingerprint.goodix_fod.msmnile \
+    vendor.qti.hardware.sensorscalibrate@1.0-impl \
     libarcsoft_dualcam_refocus \
     libcamera_nn_stub \
     libcamxfdalgov7 \
@@ -190,41 +201,15 @@ PRODUCT_PACKAGES += \
     libcamxswprocessalgo \
     libcamxtintlessalgo \
     libcom.qti.chinodeutils \
-    libmmcamera_faceproc \
-    libmmcamera_faceproc2 \
-    libmpbase \
-    libsns_device_mode_stub \
-    libswregistrationalgo \
-    vendor.qti.hardware.camera.device@1.0 \
-    vendor.qti.hardware.fingerprint@1.0 \
-    vendor.qti.hardware.audiohalext@1.0-impl \
-    liba2dpoffload \
-    libacdb-fts \
-    libacdbloader \
-    libacdbrtac \
-    libadiertac \
-    libadm \
-    libaudcal \
-    libaudio_log_utils \
-    libaudioconfigstore \
-    libpn553_fw \
-    libqtigef \
-    libssrec \
-    libvideoutils \
-    libasphere \
-    libqcbassboost \
-    libqcreverb \
-    libqcvirt \
-    libshoebox \
-    vendor.qti.hardware.audiohalext@1.0 \
-    android.hardware.sensors@2.0-impl \
-    fingerprint.goodix_fod.msmnile \
-    vendor.qti.hardware.sensorscalibrate@1.0-impl \
     libgf_ca \
     libgf_hal \
     libgoodixhwfingerprint \
+    libmmcamera_faceproc \
+    libmmcamera_faceproc2 \
+    libmpbase \
     libsensorcal \
     libsensorslog \
+    libsns_device_mode_stub \
     libsns_fastRPC_util \
     libsns_low_lat_stream_stub \
     libsns_registry_skel \
@@ -232,8 +217,10 @@ PRODUCT_PACKAGES += \
     libsnsdiaglog \
     libssc \
     libssc_default_listener \
+    libswregistrationalgo \
     libvendor.goodix.hardware.biometrics.fingerprint@2.1 \
     sensors.ssc \
+    vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
     android.hardware.camera.provider@2.4-service_64 \
     android.hardware.sensors@2.0-service \
