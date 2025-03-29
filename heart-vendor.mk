@@ -183,7 +183,6 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     com.qti.chi.override \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
-    libadsprpc \
     libarcsoft_dualcam_refocus \
     libcamera_nn_stub \
     libcamxfdalgov7 \
