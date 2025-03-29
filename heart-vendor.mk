@@ -229,7 +229,6 @@ PRODUCT_PACKAGES += \
     libqcreverb \
     libqcvirt \
     libshoebox \
-    libswdap \
     vendor.qti.hardware.audiohalext@1.0 \
     fingerprint.goodix_fod.msmnile \
     libgf_ca \
