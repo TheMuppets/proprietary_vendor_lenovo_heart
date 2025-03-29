@@ -131,7 +131,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-external \
     android.hardware.camera.provider@2.4-legacy \
-    android.hardware.sensors@2.0-impl \
     camera.device@1.0-impl \
     camera.device@3.2-impl \
     camera.device@3.3-impl \
@@ -182,7 +181,6 @@ PRODUCT_PACKAGES += \
     audio.primary.msmnile \
     camera.qcom \
     com.qti.chi.override \
-    vendor.qti.hardware.sensorscalibrate@1.0-impl \
     libarcsoft_dualcam_refocus \
     libcamera_nn_stub \
     libcamxfdalgov7 \
@@ -195,21 +193,10 @@ PRODUCT_PACKAGES += \
     libmmcamera_faceproc \
     libmmcamera_faceproc2 \
     libmpbase \
-    libsensorcal \
-    libsensorslog \
     libsns_device_mode_stub \
-    libsns_fastRPC_util \
-    libsns_low_lat_stream_stub \
-    libsns_registry_skel \
-    libsnsapi \
-    libsnsdiaglog \
-    libssc \
-    libssc_default_listener \
     libswregistrationalgo \
-    sensors.ssc \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.fingerprint@1.0 \
-    vendor.qti.hardware.sensorscalibrate@1.0 \
     vendor.qti.hardware.audiohalext@1.0-impl \
     liba2dpoffload \
     libacdb-fts \
@@ -230,11 +217,24 @@ PRODUCT_PACKAGES += \
     libqcvirt \
     libshoebox \
     vendor.qti.hardware.audiohalext@1.0 \
+    android.hardware.sensors@2.0-impl \
     fingerprint.goodix_fod.msmnile \
+    vendor.qti.hardware.sensorscalibrate@1.0-impl \
     libgf_ca \
     libgf_hal \
     libgoodixhwfingerprint \
+    libsensorcal \
+    libsensorslog \
+    libsns_fastRPC_util \
+    libsns_low_lat_stream_stub \
+    libsns_registry_skel \
+    libsnsapi \
+    libsnsdiaglog \
+    libssc \
+    libssc_default_listener \
     libvendor.goodix.hardware.biometrics.fingerprint@2.1 \
+    sensors.ssc \
+    vendor.qti.hardware.sensorscalibrate@1.0 \
     android.hardware.camera.provider@2.4-service_64 \
     android.hardware.sensors@2.0-service \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
