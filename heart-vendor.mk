@@ -220,7 +220,6 @@ PRODUCT_PACKAGES += \
     libswregistrationalgo \
     libvendor.goodix.hardware.biometrics.fingerprint@2.1 \
     sensors.ssc \
-    vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
     android.hardware.camera.provider@2.4-service_64 \
     android.hardware.sensors@2.0-service \
